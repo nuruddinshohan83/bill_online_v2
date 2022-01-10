@@ -10,12 +10,8 @@ function App() {
     <UserProvider>
       <h1>App</h1>
       <SignInWithGoogle></SignInWithGoogle>
-      <SignOut></SignOut>
       <Comp>
-
       </Comp>
-
-
     </UserProvider>
   )
 }
