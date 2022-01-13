@@ -5,14 +5,13 @@ import UserProvider from '../context/UserProvider';
 import SignInWithGoogle from '../components/SignInWithGoogle';
 import SignOut from '../components/SignOut';
 import Comp from '../components/Comp';
-import LoginRedirect from '../components/LoginRedirect';
+import Redirect from '../components/Redirect';
 function App() {
   return (
     <UserProvider>
-      <LoginRedirect>
-
-      </LoginRedirect>
+      <Redirect></Redirect>
       <SignInWithGoogle></SignInWithGoogle>
+      <SignOut></SignOut>
       <Comp>
       </Comp>
     </UserProvider>

@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { UserContext, SignOutContext } from '../context/UserProvider'
-
+//for now its just a test comp
 export default function Comp() {
     const data = useContext(UserContext)
     const removeData = useContext(SignOutContext)

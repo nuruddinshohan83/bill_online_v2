@@ -1,10 +1,18 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { supabase } from '../utils/supabaseClient'
 import { UserContext } from '../context/UserProvider'
-export default function LoginRedirect() {
+export default function Redirect() {
     let [exist, setExist] = useState(null)
     let [flage, setFlage] = useState()
     let userData = useContext(UserContext)
+    /*
+        this Component will check if user is logged in for first time
+        or its a old user 
+        and it will redirect it to automatically to
+            -a form (first time logged in)
+            -to dashboard (regular user)
+    */
+
 
     //    console.log("Login Redirect userdata", userData)
     useEffect(() => {

@@ -6,7 +6,8 @@ import { supabase } from '../utils/supabaseClient';
 export let UserContext = React.createContext(null)
 //Provides A function witch will signout user
 export let SignOutContext = React.createContext()
-
+//may use it for company info
+export let CompanyInfoContext = React.createContext()
 
 export default function UserProvider({ children }) {
     const [user, setUser] = useState(null)
